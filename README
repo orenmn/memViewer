@@ -1,0 +1,22 @@
+----- memViewer.py -----
+a simple windows x86 memory viewer written in Python 3.
+
+normal keys should work as expected.
+special keys:
+    g - set focus on the address window 
+            inside address window - press enter to show the memory at this address)
+    r - switch to read mode (stop updating memory views)
+    v - switch to view mode
+            while in view mode:
+                plus - increment number of chunks in line
+                minus - decrement number of chunks in line
+                alt+1 - change chunk type to 'bytes'
+                alt+2 - change chunk type to 'words'
+                alt+4 - change chunk type to 'dwords'
+    w - switch to write mode
+            while in write mode - press enter to write changed bytes to process memory
+    tab - set focus on the bin or ascii view window    
+    escape - switch back to view mode
+    alt+left - back
+    alt+right - forward
+    ctrl+n - open another instance of memViewer.py watching the same process, on the current address.
